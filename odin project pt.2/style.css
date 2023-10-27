@@ -1,0 +1,324 @@
+*{
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body{
+    margin: 0;
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+    grid-template-rows: 1fr 5fr;
+    height: 100vh;
+}
+
+#header{
+    grid-column: 2/4;
+    grid-row: 1/2;
+    padding: 2rem;
+}
+
+.user-profile{
+    display: flex;
+    align-content: center;
+    gap: 12px;
+}
+
+input[type=text]{
+    border-radius: 7px;
+    width: 210px;
+    border: 1px solid grey;
+    height:20px;
+}
+
+.profile-settings{
+    display: flex;
+    align-content: flex-end; 
+    gap: 24px;
+    margin-left: 35rem;   
+}
+
+.noti{
+    cursor: pointer;
+}
+
+
+.pavatar{
+    border-radius: 50%;
+    background-color: yellow;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.user-name{
+    font-weight: bold;
+    font-size: 20px;;
+}
+
+#userp-buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.usera{
+    border-radius: 50%;
+    background-color: blue;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+
+.username .greeting{
+    font-size: large;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+
+.username .bigname{
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.buttons{
+  margin-left: 29rem;
+  display: inline-block;
+}
+
+.buttons a{
+    color: white;
+    background-color: cornflowerblue;
+    padding: 10px;
+    margin: 12px;
+    width: 55px;
+}
+
+.buttons .button1, .button2, .button3{
+    border-radius: 15px;
+    padding: 10px; 
+}
+
+#sidebar{
+    grid-column: 1;
+    grid-row: 1/3;
+    background-color: rgb(33, 136, 170);
+    margin: 0;
+    padding: 12px;
+}
+
+.sidebarh h3{
+    color: white;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.sidebarh{
+    margin-left: 20px;
+}
+
+
+.slinks li{
+    display: block;
+    margin-bottom: 12px;
+    padding: 5px;
+}
+
+.slinks a{
+    padding: 12px;
+}
+
+.slinks li a{
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    
+
+}
+
+.slinks li a:hover{
+    background-color: cornflowerblue;
+}
+
+
+
+
+#maincontent{
+   grid-column: 2/4;
+   grid-row: 2/3;
+   background-color: rgb(214, 210, 210);
+   display: grid;
+   grid-template-columns: 3.2fr 0.7fr;
+   grid-template-rows: 0.4fr 3fr;
+}
+
+.content-headings{
+    grid-column: 1/3; 
+    grid-row: 1/2;   
+    display: flex;
+    align-items: center;
+}
+
+.proheading{
+    margin-left: 2rem;
+}
+
+.trdcol-heading{
+    margin-left: 42rem;
+}
+
+.projects{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-row: 1fr 1fr 1fr;
+    gap: 20px;
+    column-gap: 5px;
+}
+
+.project1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.project1 h3,p{
+    margin-left: 15px;
+}
+
+.project2{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+.project2 h3,p{
+    margin-left: 15px;
+}
+
+.project3{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.project3 h3,p{
+    margin-left: 15px;
+}
+
+.project4{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.project4 h3,p{
+    margin-left: 15px;
+}
+
+.project5{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+.project5 h3,p{
+    margin-left: 15px;
+}
+
+.project6{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+.project6 h3,p{
+    margin-left: 15px;
+}
+
+#thirdcol{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.project1, .project2, .project3, .project4,
+.project5, .project6{
+    background-color: white;
+    width: 23rem;
+    border-left: 7px solid gold;
+    border-radius: 9px;
+}
+
+.project1, .project3, .project5{
+    margin-left: 15px;
+}
+
+.project2, .project4, .project6{
+    margin-right: 5px;
+}
+
+#thirdcol{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+.announcements{
+    background-color: white;
+    margin-right: 5rem;
+    padding: 2rem;
+    width: 13rem;
+    border-radius: 9px;
+    height: 21rem;
+}
+
+.announ1 h3,p{
+    margin-left: 15px;
+}
+
+.announ2 h3,p{
+    margin-left: 15px;
+}
+
+.announ3 h3,p{
+    margin-left: 15px;
+}
+
+.trending{
+    background-color: white;
+    margin-right: 5.5rem;
+    padding: 2rem;
+    width: 13rem;
+    border-radius: 9px;
+}
+
+
+.usert{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.userm{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.userk{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.user-a{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+
